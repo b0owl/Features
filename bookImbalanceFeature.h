@@ -1,9 +1,9 @@
 #pragma once
 
-#if __has_include("vendor/mlTradingArchitecture.h")
-#include "vendor/mlTradingArchitecture.h"
+#if __has_include("vendor/QModel.h")
+#include "vendor/QModel.h"
 #else
-#error "Missing necessary vendor, download via github.com/b0owl/ML-Trading-Architecture"
+#error "Missing necessary vendor, download via github.com/b0owl/QModel"
 #endif
 
 /// @brief resting bid/ask size imbalance at idx, +1 = book stacked on the bid,

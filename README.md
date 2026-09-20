@@ -2,14 +2,13 @@ Standalone features that can be fed to an ML model.
 
 ## Setup
 
-These headers include the amalgamated single-header build of the core
-project, not the multi-file `src/` version. You need to generate it once:
+These headers include the amalgamated single-header build of QModel, not the
+multi-file `src/` version. You need to generate it once:
 
-1. In `ML Trading Architecture/`, run `./build.sh`. This produces a
-   `mlTradingArchitecture/` folder containing `mlTradingArchitecture.h`,
-   `mlTradingArchitectureCore.h`, and the GLFW headers.
-2. Copy (or symlink) that `mlTradingArchitecture/` folder into this directory
-   as `vendor/`, so you end up with `Features/vendor/mlTradingArchitecture.h`.
+1. In `QModel/`, run `./amalgamate.sh`. This produces a `QModel/` folder
+   containing `QModel.h` and the GLFW headers.
+2. Copy (or symlink) that `QModel/` folder into this directory as `vendor/`,
+   so you end up with `Features/vendor/QModel.h`.
 
 ## Including a feature
 
